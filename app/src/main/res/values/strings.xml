@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">BaseAndroid</string>
+    <string name="title_feature_home">Home</string>
+    <string name="title_feature_list">List</string>
+</resources>
