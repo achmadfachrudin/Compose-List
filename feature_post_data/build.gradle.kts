@@ -10,10 +10,10 @@ plugins {
 apply(from = "../gradles/basic-kapt-config.gradle")
 
 android {
-    compileSdk = Version.androidCompileSdk
 
+    compileSdk = 31
     defaultConfig {
-        minSdk = Version.androidMinSdk
+        minSdk = 21
     }
 
     compileOptions {
@@ -32,5 +32,5 @@ dependencies {
     kapt("com.squareup.moshi:moshi-kotlin-codegen:1.12.0")
 
     // Room
-    implementation("androidx.room:room-ktx:2.3.0")
+    implementation("androidx.room:room-ktx:2.4.1")
 }

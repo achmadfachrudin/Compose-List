@@ -8,10 +8,10 @@ plugins {
 apply(from = "../gradles/basic-kapt-config.gradle")
 
 android {
-    compileSdk = Version.androidCompileSdk
 
+    compileSdk = 31
     defaultConfig {
-        minSdk = Version.androidMinSdk
+        minSdk = 21
     }
 
     compileOptions {
@@ -40,21 +40,21 @@ dependencies {
     implementation(project(":feature_post_data"))
 
     // UI
-    implementation(Lib.fragmentKtx)
-    implementation(Lib.lifecycleLivedataKtx)
+    implementation("androidx.fragment:fragment-ktx:1.4.1")
+    implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.4.1")
 
     // Compose
-    implementation(Lib.composeUi)
-    implementation(Lib.composeUiTooling)
-    implementation(Lib.composeUiToolingPreview)
-    implementation(Lib.composeMaterial)
-    implementation(Lib.composeActivity)
-    implementation(Lib.coil)
+    implementation("androidx.compose.ui:ui:1.1.0")
+    implementation("androidx.compose.ui:ui-tooling:1.1.0")
+    implementation("androidx.compose.ui:ui-tooling-preview:1.1.0")
+    implementation("androidx.compose.material:material:1.1.0")
+    implementation("androidx.activity:activity-compose:1.4.0")
+    implementation("io.coil-kt:coil-compose:1.4.0")
 
     // Paging
-    implementation("androidx.paging:paging-compose:1.0.0-alpha13")
+    implementation("androidx.paging:paging-compose:1.0.0-alpha14")
 
     // DI
-    implementation(Lib.hiltAndroid)
-    kapt(Lib.hiltAndroidCompiler)
+    implementation("com.google.dagger:hilt-android:2.41")
+    kapt("com.google.dagger:hilt-android-compiler:2.41")
 }
