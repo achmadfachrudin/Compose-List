@@ -6,7 +6,7 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import com.achmad.baseandroid.theme.BaseComposeTheme
-import com.achmad.feature.post.data.model.PostItem
+import com.achmad.feature.post.data.model.User
 import com.google.android.play.core.splitcompat.SplitCompat
 
 class PostDetailActivity : ComponentActivity() {
@@ -16,16 +16,16 @@ class PostDetailActivity : ComponentActivity() {
 
         fun createIntent(
             context: Context,
-            post: PostItem,
+            user: User,
         ): Intent {
             return Intent(context, PostDetailActivity::class.java).apply {
-                putExtra(BUNDLE_KEY_POST, post)
+                putExtra(BUNDLE_KEY_POST, user)
             }
         }
     }
 
-    private val post by lazy {
-        intent.getParcelableExtra<PostItem>(BUNDLE_KEY_POST)!!
+    private val user by lazy {
+        intent.getParcelableExtra<User>(BUNDLE_KEY_POST)!!
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -33,7 +33,7 @@ class PostDetailActivity : ComponentActivity() {
 
         setContent {
             BaseComposeTheme {
-                PostDetailPageCompose(post)
+                PostDetailPageCompose(user)
             }
         }
     }

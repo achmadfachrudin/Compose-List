@@ -44,10 +44,12 @@ dependencies {
     implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.4.1")
 
     // Compose
-    implementation("androidx.compose.ui:ui:1.1.0")
-    implementation("androidx.compose.ui:ui-tooling:1.1.0")
-    implementation("androidx.compose.ui:ui-tooling-preview:1.1.0")
-    implementation("androidx.compose.material:material:1.1.0")
+    implementation("androidx.compose.ui:ui:1.1.1")
+    implementation("androidx.compose.ui:ui-tooling:1.1.1")
+    implementation("androidx.compose.ui:ui-tooling-preview:1.1.1")
+    implementation("androidx.compose.material:material:1.1.1")
+    implementation("androidx.compose.material:material-icons-extended:1.1.1")
+    implementation("androidx.compose.runtime:runtime-livedata:1.1.1")
     implementation("androidx.activity:activity-compose:1.4.0")
     implementation("io.coil-kt:coil-compose:1.4.0")
 

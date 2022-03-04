@@ -79,7 +79,7 @@ dependencies {
     api("androidx.navigation:navigation-fragment-ktx:2.4.1")
     api("androidx.navigation:navigation-ui-ktx:2.4.1")
     api("androidx.navigation:navigation-dynamic-features-fragment:2.4.1")
-    api("androidx.navigation:navigation-compose:2.5.0-alpha02")
+    api("androidx.navigation:navigation-compose:2.5.0-alpha03")
 
     // Kotlin
     implementation("org.jetbrains.kotlin:kotlin-stdlib:1.6.10")
@@ -91,12 +91,12 @@ dependencies {
     api("androidx.constraintlayout:constraintlayout:2.1.3")
 
     // Compose
-    implementation("androidx.compose.ui:ui:1.1.0")
-    implementation("androidx.compose.ui:ui-tooling:1.1.0")
-    implementation("androidx.compose.ui:ui-tooling-preview:1.1.0")
-    implementation("androidx.compose.material:material:1.1.0")
+    implementation("androidx.compose.ui:ui:1.1.1")
+    implementation("androidx.compose.ui:ui-tooling:1.1.1")
+    implementation("androidx.compose.ui:ui-tooling-preview:1.1.1")
+    implementation("androidx.compose.material:material:1.1.1")
     implementation("androidx.activity:activity-compose:1.4.0")
-    implementation("androidx.compose.runtime:runtime-livedata:1.1.0")
+    implementation("androidx.compose.runtime:runtime-livedata:1.1.1")
     implementation("io.coil-kt:coil-compose:1.4.0")
 
     // Paging
@@ -108,9 +108,9 @@ dependencies {
     implementation("javax.inject:javax.inject:1")
 
     // Room
-    implementation("androidx.room:room-runtime:2.4.1")
-    implementation("androidx.room:room-ktx:2.4.1")
-    kapt("androidx.room:room-compiler:2.4.1")
+    implementation("androidx.room:room-runtime:2.4.2")
+    implementation("androidx.room:room-ktx:2.4.2")
+    kapt("androidx.room:room-compiler:2.4.2")
 
     // Network
     implementation("com.squareup.okhttp3:okhttp:4.9.1")

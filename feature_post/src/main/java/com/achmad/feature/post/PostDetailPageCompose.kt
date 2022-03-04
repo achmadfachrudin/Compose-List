@@ -3,11 +3,11 @@ package com.achmad.feature.post
 import androidx.compose.foundation.layout.Column
 import androidx.compose.runtime.Composable
 import com.achmad.baseandroid.theme.component.BaseToolbar
-import com.achmad.feature.post.data.model.PostItem
+import com.achmad.feature.post.data.model.User
 
 @Composable
 fun PostDetailPageCompose(
-    model: PostItem,
+    model: User,
 ) {
     Column {
         BaseToolbar(

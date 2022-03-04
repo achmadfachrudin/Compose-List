@@ -5,7 +5,7 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "BaseAndroid"
+rootProject.name = "Compose-List"
 include ':app'
 include ':common'
 include ':feature_post'
