@@ -1,4 +1,4 @@
-package com.achmad.baseandroid.main
+package com.achmad.baseandroid.maincompose
 
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.Text

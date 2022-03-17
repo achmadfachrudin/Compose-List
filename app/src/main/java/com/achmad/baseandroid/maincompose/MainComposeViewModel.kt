@@ -1,4 +1,4 @@
-package com.achmad.baseandroid.main
+package com.achmad.baseandroid.maincompose
 
 import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.ViewModel

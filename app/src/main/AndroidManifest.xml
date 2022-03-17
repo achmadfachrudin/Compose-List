@@ -17,7 +17,7 @@
         android:usesCleartextTraffic="true">
 
         <activity
-            android:name=".main.MainComposeActivity"
+            android:name=".maincompose.MainComposeActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

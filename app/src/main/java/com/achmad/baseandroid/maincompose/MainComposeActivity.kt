@@ -1,4 +1,4 @@
-package com.achmad.baseandroid.main
+package com.achmad.baseandroid.maincompose
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
