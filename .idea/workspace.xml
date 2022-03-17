@@ -10,11 +10,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2d528650-b20c-4f2f-9a76-3a946d1696c2" name="Default Changelist" comment="chore: cleanup code">
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/achmad/baseandroid/main/MainComposeActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/achmad/baseandroid/maincompose/MainComposeActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/achmad/baseandroid/main/MainComposeViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/achmad/baseandroid/maincompose/MainComposeViewModel.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/achmad/baseandroid/main/MainContentCompose.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/achmad/baseandroid/maincompose/MainContentCompose.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/achmad/baseandroid/main/MainPageCompose.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/achmad/baseandroid/maincompose/MainPageCompose.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/achmad/baseandroid/main/MainActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/achmad/baseandroid/main/MainViewModel.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/main_activity.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/achmad/baseandroid/di/NetworkModule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/achmad/baseandroid/di/NetworkModule.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,15 +44,30 @@
       </state>
     </system>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="layoutResourceFile" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/app/build.gradle.kts" root0="FORCE_HIGHLIGHTING" />
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="memory.settings.postsync.last.time.stamp" value="1647480735384" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
+      <recent name="com.achmad.baseandroid.main" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App">
@@ -121,7 +136,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647481285038</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="chore: cleanup code">
+      <created>1647481368742</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1647481368742</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -137,6 +159,8 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="chore: cleanup code" />
     <option name="LAST_COMMIT_MESSAGE" value="chore: cleanup code" />
   </component>
