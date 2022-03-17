@@ -1,5 +1,6 @@
 package com.achmad.baseandroid.di
 
+import android.content.SharedPreferences
 import com.achmad.baseandroid.cache.PostDao
 import com.achmad.baseandroid.service.PostRemote
 import com.achmad.baseandroid.service.PostRepository
@@ -29,9 +30,10 @@ object ServiceModule {
 
     @Provides
     fun providePostRepository(
+        sharedPreferences: SharedPreferences,
         postDao: PostDao,
         postRemote: PostRemote
     ): PostRepository {
-        return PostRepository(postDao, postRemote)
+        return PostRepository(sharedPreferences, postDao, postRemote)
     }
 }

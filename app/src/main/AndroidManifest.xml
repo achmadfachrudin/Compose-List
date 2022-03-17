@@ -17,7 +17,7 @@
         android:usesCleartextTraffic="true">
 
         <activity
-            android:name=".main.MainActivity"
+            android:name=".main.LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -35,6 +35,10 @@
                     android:scheme="app" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".main.MainActivity"
+            android:exported="true" />
 
         <!--        <activity-->
         <!--            android:name=".maincompose.MainComposeActivity"-->

@@ -15,7 +15,9 @@ class MainActivity : AppCompatActivity() {
         fun createIntent(
             context: Context,
         ): Intent {
-            return Intent(context, MainActivity::class.java)
+            return Intent(context, MainActivity::class.java).apply {
+                addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK)
+            }
         }
     }
 
@@ -27,7 +29,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         configureBinding()
 
-        binding.textTitle.text = viewModel.coba
+        binding.textTitle.text = viewModel.username
     }
 
     private fun configureBinding() {
