@@ -8,7 +8,7 @@ import javax.inject.Inject
 
 @HiltViewModel
 class MainViewModel @Inject constructor(
-    private val savedStateHandle: SavedStateHandle,
+//    private val savedStateHandle: SavedStateHandle,
     private val sharedPreferences: SharedPreferences,
 ) : ViewModel() {
 
