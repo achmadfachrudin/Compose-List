@@ -3,12 +3,13 @@ package com.achmad.baseandroid.main
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
-import androidx.activity.ComponentActivity
-import com.achmad.baseandroid.R
+import androidx.activity.viewModels
+import androidx.appcompat.app.AppCompatActivity
+import com.achmad.baseandroid.databinding.ActivityMainBinding
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
-class MainActivity : ComponentActivity() {
+class MainActivity : AppCompatActivity() {
 
     companion object {
         fun createIntent(
@@ -18,10 +19,19 @@ class MainActivity : ComponentActivity() {
         }
     }
 
+    private lateinit var binding: ActivityMainBinding
+
+    private val viewModel: MainViewModel by viewModels()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        configureBinding()
 
+        binding.textTitle.text = viewModel.coba
+    }
 
+    private fun configureBinding() {
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
     }
 }
