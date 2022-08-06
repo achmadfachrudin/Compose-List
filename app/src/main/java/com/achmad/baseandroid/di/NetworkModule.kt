@@ -31,7 +31,7 @@ object NetworkModule {
 
     @Provides
     fun provideOkHttpClient(
-        httpLoggingInterceptor: Interceptor,
+        httpLoggingInterceptor: Interceptor
 //        @ApplicationContext context: Context
     ): OkHttpClient {
         return OkHttpClient.Builder()
@@ -45,7 +45,7 @@ object NetworkModule {
 
     @Provides
     fun provideRetrofit(
-        okHttpClient: OkHttpClient,
+        okHttpClient: OkHttpClient
     ): Retrofit {
         return Retrofit.Builder()
             .baseUrl(BuildConfig.BASE_URL)

@@ -26,7 +26,7 @@ object CacheModule {
     @Provides
     @Singleton
     fun provideAppDatabase(
-        application: Application,
+        application: Application
     ): AppDatabase {
         return Room
             .databaseBuilder(application, AppDatabase::class.java, "baseandroid.db")

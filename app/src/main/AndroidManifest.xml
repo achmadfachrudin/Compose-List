@@ -16,49 +16,49 @@
         android:theme="@style/Theme.BaseAndroid"
         android:usesCleartextTraffic="true">
 
-        <activity
-            android:name=".main.LoginActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+<!--        <activity-->
+<!--            android:name=".main.LoginActivity"-->
+<!--            android:exported="true">-->
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
 
-            <intent-filter>
-                <action android:name="android.intent.action.VIEW" />
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.VIEW" />-->
 
-                <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="android.intent.category.BROWSABLE" />
+<!--                <category android:name="android.intent.category.DEFAULT" />-->
+<!--                <category android:name="android.intent.category.BROWSABLE" />-->
 
-                <data
-                    android:host="com.achmad.baseandroid"
-                    android:scheme="app" />
-            </intent-filter>
-        </activity>
+<!--                <data-->
+<!--                    android:host="com.achmad.baseandroid"-->
+<!--                    android:scheme="app" />-->
+<!--            </intent-filter>-->
+<!--        </activity>-->
 
-        <activity
-            android:name=".main.MainActivity"
-            android:exported="true" />
+<!--        <activity-->
+<!--            android:name=".main.MainActivity"-->
+<!--            android:exported="true" />-->
 
-        <!--        <activity-->
-        <!--            android:name=".maincompose.MainComposeActivity"-->
-        <!--            android:exported="true">-->
-        <!--            <intent-filter>-->
-        <!--                <action android:name="android.intent.action.MAIN" />-->
-        <!--                <category android:name="android.intent.category.LAUNCHER" />-->
-        <!--            </intent-filter>-->
+                <activity
+                    android:name=".maincompose.MainComposeActivity"
+                    android:exported="true">
+                    <intent-filter>
+                        <action android:name="android.intent.action.MAIN" />
+                        <category android:name="android.intent.category.LAUNCHER" />
+                    </intent-filter>
 
-        <!--            <intent-filter>-->
-        <!--                <action android:name="android.intent.action.VIEW" />-->
+                    <intent-filter>
+                        <action android:name="android.intent.action.VIEW" />
 
-        <!--                <category android:name="android.intent.category.DEFAULT" />-->
-        <!--                <category android:name="android.intent.category.BROWSABLE" />-->
+                        <category android:name="android.intent.category.DEFAULT" />
+                        <category android:name="android.intent.category.BROWSABLE" />
 
-        <!--                <data-->
-        <!--                    android:host="com.achmad.baseandroid"-->
-        <!--                    android:scheme="app" />-->
-        <!--            </intent-filter>-->
-        <!--        </activity>-->
+                        <data
+                            android:host="com.achmad.baseandroid"
+                            android:scheme="app" />
+                    </intent-filter>
+                </activity>
     </application>
 
 </manifest>

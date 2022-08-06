@@ -30,7 +30,7 @@ android {
     }
 
     composeOptions {
-        kotlinCompilerExtensionVersion = "1.0.1"
+        kotlinCompilerExtensionVersion = "1.3.0-beta01"
     }
 }
 
@@ -40,21 +40,21 @@ dependencies {
     implementation(project(":feature_post_data"))
 
     // UI
-    implementation("androidx.fragment:fragment-ktx:1.4.1")
-    implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.4.1")
+    implementation("androidx.fragment:fragment-ktx:1.5.1")
+    implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.5.1")
 
     // Compose
-    implementation("androidx.compose.ui:ui:1.1.0")
-    implementation("androidx.compose.ui:ui-tooling:1.1.0")
-    implementation("androidx.compose.ui:ui-tooling-preview:1.1.0")
-    implementation("androidx.compose.material:material:1.1.0")
-    implementation("androidx.activity:activity-compose:1.4.0")
-    implementation("io.coil-kt:coil-compose:1.4.0")
+    implementation("androidx.compose.ui:ui:1.2.0")
+    implementation("androidx.compose.ui:ui-tooling:1.2.0")
+    implementation("androidx.compose.ui:ui-tooling-preview:1.2.0")
+    implementation("androidx.compose.material:material:1.2.0")
+    implementation("androidx.activity:activity-compose:1.5.1")
+    implementation("io.coil-kt:coil-compose:2.1.0")
 
     // Paging
-    implementation("androidx.paging:paging-compose:1.0.0-alpha14")
+    implementation("androidx.paging:paging-compose:1.0.0-alpha15")
 
     // DI
-    implementation("com.google.dagger:hilt-android:2.41")
-    kapt("com.google.dagger:hilt-android-compiler:2.41")
+    implementation("com.google.dagger:hilt-android:2.43.2")
+    kapt("com.google.dagger:hilt-android-compiler:2.43.2")
 }

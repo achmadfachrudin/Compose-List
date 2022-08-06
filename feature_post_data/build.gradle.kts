@@ -30,5 +30,5 @@ dependencies {
     kapt("com.squareup.moshi:moshi-kotlin-codegen:1.13.0")
 
     // Room
-    implementation("androidx.room:room-ktx:2.4.1")
+    implementation("androidx.room:room-ktx:2.4.3")
 }
