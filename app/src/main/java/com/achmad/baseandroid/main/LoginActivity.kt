@@ -30,7 +30,6 @@ class LoginActivity : AppCompatActivity() {
 
     private fun configureViews() {
         with(binding) {
-
             buttonLogin.setOnClickListener {
                 viewModel.doLogin(
                     editTextUsername.text.toString().trim(),
