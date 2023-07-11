@@ -31,14 +31,14 @@ fun MainPageCompose() {
 
     val bottomNavigationItems = listOf(
         BottomNavigationItem.HOME,
-        BottomNavigationItem.LIST
+        BottomNavigationItem.LIST,
     )
 
     Scaffold(
         topBar = {
             BaseToolbar(
                 title = "Base Android",
-                showLeftButton = false
+                showLeftButton = false,
             )
         },
         bottomBar = {
@@ -52,12 +52,11 @@ fun MainPageCompose() {
 @Composable
 private fun MainContentScreen(
     navController: NavHostController,
-    startDestination: PageDestination = PageDestination.HOME
+    startDestination: PageDestination = PageDestination.HOME,
 ) {
     val context = LocalContext.current
 
     NavHost(navController = navController, startDestination = startDestination.name) {
-
         composable(PageDestination.HOME.name) {
             HomePageCompose(navController)
         }
@@ -68,12 +67,12 @@ private fun MainContentScreen(
                 featureName = ":feature_post",
                 onDismiss = {
                     navController.navigateUp()
-                }
+                },
             ) {
                 val intent = Intent()
                 intent.setClassName(
                     BuildConfig.APPLICATION_ID,
-                    "com.achmad.feature.post.PostListActivity"
+                    "com.achmad.feature.post.PostListActivity",
                 )
                 context.startActivity(intent)
             }
@@ -84,7 +83,7 @@ private fun MainContentScreen(
 @Composable
 private fun MainBottomNavigation(
     navController: NavHostController,
-    items: List<BottomNavigationItem>
+    items: List<BottomNavigationItem>,
 ) {
     BottomNavigation {
         items.forEach { menu ->
@@ -106,7 +105,7 @@ private fun MainBottomNavigation(
                             launchSingleTop = true
                         }
                     }
-                }
+                },
             )
         }
     }
@@ -115,18 +114,18 @@ private fun MainBottomNavigation(
 sealed class BottomNavigationItem(
     val route: PageDestination,
     @StringRes val label: Int,
-    val icon: ImageVector
+    val icon: ImageVector,
 ) {
     object HOME : BottomNavigationItem(
         PageDestination.HOME,
         R.string.title_feature_home,
-        Icons.Filled.Home
+        Icons.Filled.Home,
     )
 
     object LIST :
         BottomNavigationItem(
             PageDestination.LIST,
             R.string.title_feature_list,
-            Icons.Filled.Person
+            Icons.Filled.Person,
         )
 }

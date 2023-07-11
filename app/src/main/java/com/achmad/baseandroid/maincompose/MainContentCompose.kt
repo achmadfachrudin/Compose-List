@@ -11,6 +11,6 @@ import androidx.navigation.NavController
 fun HomePageCompose(navController: NavController) {
     Text(
         modifier = Modifier.padding(16.dp),
-        text = "This is a test app for aruna"
+        text = "This is a compose app",
     )
 }
