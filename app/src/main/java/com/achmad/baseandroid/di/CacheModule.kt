@@ -6,6 +6,7 @@ import android.content.SharedPreferences
 import androidx.room.Room
 import com.achmad.baseandroid.cache.AppDatabase
 import com.achmad.baseandroid.cache.PostDao
+import com.achmad.baseandroid.cache.PrefConstant.PREF_NAME
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -20,7 +21,7 @@ object CacheModule {
     @Provides
     @Singleton
     fun provideSharedPreference(@ApplicationContext context: Context): SharedPreferences {
-        return context.getSharedPreferences("preferences_name", Context.MODE_PRIVATE)
+        return context.getSharedPreferences(PREF_NAME, Context.MODE_PRIVATE)
     }
 
     @Provides
@@ -37,6 +38,6 @@ object CacheModule {
     @Provides
     @Singleton
     fun providePostDao(appDatabase: AppDatabase): PostDao {
-        return appDatabase.postDao()
+        return appDatabase.appDao()
     }
 }
